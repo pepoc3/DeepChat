@@ -28,9 +28,6 @@ contract DeepChat is ERC20, VRFConsumerBaseV2Plus {
     // map vrf results to rollers
     mapping(address => uint256) private s_results;
 
-    // bytes32 internal keyHash;
-    // uint256 internal fee;
-
     address public vrfCoordinator = 0x9DdfaCa8183c41ad55329BdeeD9F6A8d53168B1B;
     bytes32 public s_keyHash =0x787d74caea10b2b357790d5b5247c2f63d1d91572a9846f780606e4d953677ae;
     uint256 public s_subscriptionId;
